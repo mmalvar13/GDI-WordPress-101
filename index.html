@@ -62,15 +62,26 @@
 						<li>Why you're here</li>
 						<li>A random fact about you</li>
 					</ul>
+				</section>			
+				
+				<section>
+					<h2>About the TAs</h2>
+					<h3>Why do you want to help people learn WordPress?</h3>
+					<ul>
+						<li>Your name and background</li>
+						<li>Why you're here</li>
+						<li>A random fact about you</li>
+					</ul>
 				</section>				
 				
 				<section>
 					<h2>About me</h2>
 					<h3>How I got into WordPress</h3>
 					<ul>
-						<li>Co-founded web design and development company, YIKES, Inc. in 1996 with 2 other women</li>
+						<li>Co-founded web design and development company, YIKES, Inc.</li>
 						<li>Made a WordPress blog for my kid in 2006</li>
-						<li>Hooked ever since</li>
+						<li>Co-leader of make.wordpress.org/training</li>
+						<li>Core contributor to 4.0 and 4.1</li>
 					</ul>
 				</section>			
 				
@@ -114,7 +125,7 @@
 					<h2>WordPress is</h2>
 					<h3>Popular</h3>
 					<p>
-						WordPress is the <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">#1 content management system in the world</a>. 
+						WordPress is the <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">#1 content management system in the world (60.6% marketshare)</a>. 
 					</p>
 				</section>
 				
@@ -123,19 +134,16 @@
 					<h3>Popular</h3>
 
 					<ul>
-						<li>WordPress powers <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">22.4%</a> of the Internet.</li>
-						<li>WordPress 3.9x has been <a href="http://wordpress.org/download/counter/" target="_blank">downloaded over 25,148,191 times</a></li>
+						<li>WordPress is used by <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">23.3%</a> of the sites on the web.</li>
+						<li>WordPress 4.1 has been <a href="http://wordpress.org/download/counter/" target="_blank">downloaded over 11,464,980 times</a></li>
 					</ul>
 				</section>
-
-
-
 				
 				<section>
 					<h2>WordPress is</h2>
 					<h3>Free, open source, web-based software</h3>
 					<p>
-						WordPress core software is built by hundreds of community volunteers. Thousands of people around the word contribute to it by either testing the software, submitting bugfixes or building plugins and themes for it.
+						WordPress core software is built by hundreds of community volunteers. People all around the word contribute to WordPress by either submitting bugfixes, testing, designing or writing code for the software.
 					</p>
 				</section>
 				
@@ -168,10 +176,10 @@
 				
 				<section>
 					<h2>Installing WordPress</h2>
-					<h3>What WordPress needs to run</h3>
+					<h3>What WordPress needs to run on a remote host</h3>
 					<ul>
-						<li>A hosting account running PHP version 5.2.4 or greater and MySQL version 5.0 or greater</li>
-						<li>Software from WordPress.org or a "one-click install" feature through the hosting account control panel</li>
+						<li>A hosting account running PHP version 5.2.4 or greater (recommended: PHP 5.4 or greater) and MySQL version 5.0 or greater (recommended: MySQL 5.5 or greater) </li>
+						<li>Software from WordPress.org or an install feature through a hosting account control panel</li>
 						<li>A domain name (or temporary URL provided by your host)</li>
 					</ul>
 				</section>
@@ -182,7 +190,7 @@
 					<h3>What Is Needed For a Manual Install</h3>
 					<ul>
 						<li>Access to your hosting control panel to create a database and database user</li>
-						<li>A FTP Program. FTP (or SFTP) is the method used to upload and download files between a computer and a hosting account</li>
+						<li>A SFTP Program. SFTP (or FTP) is the method used to upload and download files between a computer and a hosting account</li>
 						<li>A Web browser. Installation is performed step-by-step on a web browser</li>
 					</ul>
 				</section>
@@ -203,7 +211,7 @@
 					<h2>Security</h2>
 					<h3>Being popular means you're a target</h3>
 					<p>
-						It is important that you take security seriously when running a non-static site like WordPress.
+						It is important to take security seriously when running a site that uses a CMS.
 					</p>
 				</section>
 				
@@ -212,6 +220,7 @@
 					<h2>Security</h2>
 					<h3>During install</h3>
 					<ul>
+						<li>Choose a good host</li>
 						<li>Make your database table prefix unique. Don't use "wp_" or "wordpress_"</li>
 						<li>Create a new database user, don't use the default</li>
 						<li>Make your database user password strong.</li>
@@ -221,7 +230,7 @@
 				
 				<section>
 					<h2>Security</h2>
-					<h3>Before you start: WordPress hardening</h3>
+					<h3>Ater install: WordPress hardening</h3>
 					<ul>
 						<li>Take some <a href="http://codex.wordpress.org/Hardening_WordPress" target="_blank">code-level and sysadmin steps</a> to "harden" WordPress</li>
 							<ul>
@@ -230,7 +239,7 @@
 								<li>Disable File Editing</li>
 								<li>And more</li>
 							</ul>
-						<li>Or use a <a href="http://wordpress.org/plugins/sucuri-scanner/" target="_blank">security plugin</a> that performs "1-click hardening"</li>
+						<li>Or use a <a href="http://wordpress.org/plugins/sucuri-scanner/" target="_blank">security plugin</a> like Sucuri that performs "1-click hardening"</li>
 					</ul>
 				</section>			
 				
@@ -239,8 +248,9 @@
 					<h3>After your site's live: Monitoring and protection</h3>
 					<ul>
 						<li><strong>Keep WordPress core, themes and plugins updated!</strong></li>
-						<li>Use a service that scans and protects your site daily from hackers and malware</li>
-						<li>Use a firewall service that shields your site from  hackers and malware. Some hosts, like WPEngine.com, have this built into their hosting service</li>
+						<li>Use a security plugin</li>
+						<li>Use a service that scans and your site daily for malware</li>
+						<li>Use a firewall service that shields your site from hackers and malware. Some hosts, like WPEngine.com, have this built into their hosting service</li>
 					</ul>
 				</section>		
 				
@@ -253,6 +263,7 @@
 								<li><strong><a href="http://sucuri.net/" target="_blank">Sucuri.net</a></strong> Reasonably priced WordPress security experts</li>
 								<li><strong><a href="http://WPEngine.com/" target="_blank">WPEngine.com</a></strong> WordPress hosting that includes malware cleanup if needed</li>
 							</ul>
+						</li>
 					</ul>
 				</section>		
 				
